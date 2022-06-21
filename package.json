@@ -1,0 +1,22 @@
+{
+  "name": "flowassignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LloydJMyung/flowAssignment.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "lloyd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LloydJMyung/flowAssignment/issues"
+  },
+  "homepage": "https://github.com/LloydJMyung/flowAssignment#readme"
+}

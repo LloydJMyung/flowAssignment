@@ -6,6 +6,7 @@ const connection = mysql.createConnection(dbconfig);
 const app       = express();
 
 app.set('port', process.env.PORT || 3000);
+
 app.get('/', (req, res) => {
     res.send('Root');
 });
@@ -22,7 +23,3 @@ app.get('/users', (req, res) => {
     console.log('Express server listening on port ' + app.get('port'));
   });
 
-
-connection.connect();
-
-connection.query('SELECT * from ')

@@ -22,5 +22,8 @@
 4. 라우터 작성 
 
 ## 2022-06-25
-1. node에 db 연결 
-2. 
+1. node에 db 연결
+2. DB 사용자 암호 native로 변경 
+ALTER USER '${사용자}'@'%' IDENTIFIED WITH mysql_native_password BY '${암호}';
+3. 접속완료 데이터 표시 확인 
+

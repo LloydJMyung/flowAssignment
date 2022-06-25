@@ -26,4 +26,4 @@
 2. DB 사용자 암호 native로 변경 
 ALTER USER '${사용자}'@'%' IDENTIFIED WITH mysql_native_password BY '${암호}';
 3. 접속완료 데이터 표시 확인 
-
+4. 접속 주소 http://52.78.106.199:11731/

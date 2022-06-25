@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!-- <form method = "post" action="/" enctype="multipart/form-data"> -->
+    <div>
+        <form id="form">
+            <p> <label for="fix_ext">고정 확장자</label>
+            <label><input type="checkbox" id="bat" name="checkbox" value="bat"> bat</label>
+            <label><input type="checkbox" id="cmd" name="checkbox" value="cmd"> cmd</label>
+            <label><input type="checkbox" id="com" name="checkbox" value="com"> com</label>
+            <label><input type="checkbox" id="cpl" name="checkbox" value="cpl"> cpl</label>
+            <label><input type="checkbox" id="exe" name="checkbox" value="exe"> exe</label>
+            <label><input type="checkbox" id="scr" name="checkbox" value="scr"> scr</label>
+            <label><input type="checkbox" id="js" name="checkbox" value="js"> js</label>
+            </p>
+            <p> <label for="custom_ext">커스텀 확장자</label> 
+                <input type="text" placeholder="확장자 입력"> <button type="button"> 추가 </button> <br>
+                <div margin-left: 30px > </div><textarea cols="50" rows="10" ></textarea> </div>
+            </p>
+        </form>
+    </div>
+    <script src="./restFront.js"></script>
+    <script src="./init.js"></script>
+    
+</body>
+</html>

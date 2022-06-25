@@ -12,14 +12,14 @@ app.get('/', (req, res) => {
 });
 
 app.get('/users', (req, res) => {
-    connection.query('SELECT * from Users', (error, rows) => {
+    connection.query('SELECT * from exts', (error, rows) => {
       if (error) throw error;
-      console.log('User info is: ', rows);
+      console.log('default exts: ', rows);
       res.send(rows);
     });
   });
   
-  app.listen(app.get('port'), () => {
-    console.log('Express server listening on port ' + app.get('port'));
-  });
+app.listen(app.get('port'), () => {
+  console.log('Express server listening on port ' + app.get('port'));
+});
 

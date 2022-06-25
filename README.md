@@ -11,7 +11,9 @@
 
 ## 2022-06-22 
 1. MySQL 설치
-2. front 페이지 작성
+2. database: nodejs
+3. table: exts, customs; 
+4. front 페이지 작성
 
 ## 2022-06-24
 1. 스키마, 기본 확장자, 커스텀 확장자 테이블 생성

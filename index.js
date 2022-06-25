@@ -17,7 +17,7 @@ app.get('/users', (req, res) => {
       console.log('default exts: ', rows);
       let result = "";
       for(let elem of rows) {
-        result += "id: " + elem.name + " toggle: " + elem.toggle + "\n";
+        result += "<p>id: " + elem.name + ", toggle: " + elem.toggle + "</p>";
       }
       res.send(result);
     });

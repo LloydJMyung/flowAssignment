@@ -15,7 +15,11 @@ app.get('/users', (req, res) => {
     connection.query('SELECT * from exts', (error, rows) => {
       if (error) throw error;
       console.log('default exts: ', rows);
-      res.send(rows);
+      let result = "";
+      for(let elem of rows) {
+        result += "id: " + elem.name + " toggle: " + elem.toggle + "\n";
+      }
+      res.send(result);
     });
   });
   

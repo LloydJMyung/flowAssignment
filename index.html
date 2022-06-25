@@ -14,13 +14,13 @@
     <div>
         <form id="form">
             <p> <label for="fix_ext">고정 확장자</label>
-            <label><input type="checkbox" id="bat" name="checkbox" value="bat"> bat</label>
-            <label><input type="checkbox" id="cmd" name="checkbox" value="cmd"> cmd</label>
-            <label><input type="checkbox" id="com" name="checkbox" value="com"> com</label>
-            <label><input type="checkbox" id="cpl" name="checkbox" value="cpl"> cpl</label>
-            <label><input type="checkbox" id="exe" name="checkbox" value="exe"> exe</label>
-            <label><input type="checkbox" id="scr" name="checkbox" value="scr"> scr</label>
-            <label><input type="checkbox" id="js" name="checkbox" value="js"> js</label>
+            <label><input type="checkbox" id="bat" name="checkbox" value="bat" onclick="check(this)"> bat</label>
+            <label><input type="checkbox" id="cmd" name="checkbox" value="cmd" onclick="check(this)"> cmd</label>
+            <label><input type="checkbox" id="com" name="checkbox" value="com" onclick="check(this)"> com</label>
+            <label><input type="checkbox" id="cpl" name="checkbox" value="cpl" onclick="check(this)"> cpl</label>
+            <label><input type="checkbox" id="exe" name="checkbox" value="exe" onclick="check(this)"> exe</label>
+            <label><input type="checkbox" id="scr" name="checkbox" value="scr" onclick="check(this)"> scr</label>
+            <label><input type="checkbox" id="js" name="checkbox" value="js" onclick="check(this)"> js</label>
             </p>
             <p> <label for="custom_ext">커스텀 확장자</label> 
                 <input type="text" placeholder="확장자 입력"> <button type="button"> 추가 </button> <br>
@@ -28,8 +28,16 @@
             </p>
         </form>
     </div>
-    <script src="./restFront.js"></script>
-    <script src="./init.js"></script>
+    <!-- <script src="./restFront.js"></script> -->
+    <script>
+        function check(box) {
+            if(box.checked == true) {
+                alert(box.id + " checked");
+            } else {
+                alert(box.id + " uncheked");
+            }
+        }
+    </script>
     
 </body>
 </html>

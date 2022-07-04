@@ -24,10 +24,8 @@ app.get('/', (req, res) => {
         console.log('default exts: ', rows);
         // let result = "";
         for(let elem of rows) {
-          if(elem.toggle == 1) {
-           // document.getElementById(elem.name).checked = true;
-          }
-          //result += "<p>id: " + elem.name + ", toggle: " + elem.toggle + "</p>";
+          result += "<p>id: " + elem.name + ", toggle: " + elem.toggle + "</p>";
+          console.log(result);
         }
       });
       
@@ -36,19 +34,22 @@ app.get('/', (req, res) => {
   });    
 });
 
-app.post('/', (req, res) => res.send(req.body));
-
 app.get('/users', (req, res) => {
-    connection.query('SELECT * from exts', (error, rows) => {
-      if (error) throw error;
-      console.log('default exts: ', rows);
-      let result = "";
-      for(let elem of rows) {
-        result += "<p>id: " + elem.name + ", toggle: " + elem.toggle + "</p>";
-      }
-      res.send(result);
-    });
+  connection.query('SELECT * from exts', (error, rows) => {
+    if (error) throw error;
+    console.log('default exts: ', rows);
+    let result = "";
+    for(let elem of rows) {
+      result += "<p>id: " + elem.name + ", toggle: " + elem.toggle + "</p>";
+    }
+    res.send(result);
   });
+});
+
+app.post('/setcheckbox', (req, res) => {
+  alert("setcheckbox");
+
+});
   
 app.listen(app.get('port'), () => {
   console.log('Express server listening on port ' + app.get('port'));
